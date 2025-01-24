@@ -13,9 +13,9 @@ public class Lection3Controller : MonoBehaviour
         if (_stringList != null && _stringList.Count > 0)
         {
             string listContent = "List:\n";
-            foreach (string item in _stringList)
+            for (int i = 0; i < _stringList.Count; ++i)
             {
-                listContent += item + "\n";
+                listContent += _stringList[i] + "\n";
             }
             Debug.Log(listContent);
         }
@@ -68,34 +68,35 @@ public class Lection3Controller : MonoBehaviour
     [ContextMenu("Sort")]
     private void Sort()
     {
+        List<float> numberList = new List<float>();
+        List<string> letterList = new List<string>();
 
-        List<string> numberStrings = new List<string>();
-        List<string> letterStrings = new List<string>();
-        foreach (string item in _stringList)
+        for (int i = 0; i < _stringList.Count; ++i)
         {
-            if (float.TryParse(item, out _))
+            if (float.TryParse(_stringList[i], out float parsedValue))
             {
-                numberStrings.Add(item);
+                numberList.Add(parsedValue);
             }
             else
             {
-                letterStrings.Add(item);
+                letterList.Add(_stringList[i]);
             }
         }
 
-        numberStrings.Sort((a, b) => float.Parse(a).CompareTo(float.Parse(b)));
-        letterStrings.Sort();
+        numberList.Sort();
+        letterList.Sort();
 
-        _stringList = new List<string>();
-        _stringList.AddRange(numberStrings);
-        _stringList.AddRange(letterStrings);
-
+        _stringList.Clear();
+        for (int i = 0; i < numberList.Count; ++i)
+        {
+            _stringList.Add(numberList[i].ToString());
+        }
+        _stringList.AddRange(letterList);
 
         string listContent = "List sorted:\n";
-        
-        foreach (var item in _stringList)
+        for (int i = 0; i < _stringList.Count; ++i)
         {
-            listContent += item + "\n";
+            listContent += _stringList[i] + "\n";
         }
         Debug.Log(listContent);
     }
