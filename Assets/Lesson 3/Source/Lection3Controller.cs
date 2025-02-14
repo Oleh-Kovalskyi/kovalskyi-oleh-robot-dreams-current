@@ -13,9 +13,9 @@ public class Lection3Controller : MonoBehaviour
         if (_stringList != null && _stringList.Count > 0)
         {
             string listContent = "List:\n";
-            for (int i = 0; i < _stringList.Count; ++i)
+            foreach (string item in _stringList)
             {
-                listContent += _stringList[i] + "\n";
+                listContent += item + "\n";
             }
             Debug.Log(listContent);
         }
