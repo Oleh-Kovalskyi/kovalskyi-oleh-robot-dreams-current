@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.17301531, g: 0.266287, b: 0.4528302, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0.3042453, g: 0.3596475, b: 0.5, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -98,7 +98,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 328b378be85c45e44925f9a53f310f20,
     type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 366539a0dd573704db5c823720aaea2c,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 53080754ea6c9b34d9e19beaed006edc,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -3704,6 +3704,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads_files_3846167_BoatFBX
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f5db52cc6fef5e24ca74f2a326dd8113,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3789,7 +3794,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b014caa72e522bd48b899ca653f484c7,
         type: 3}
       propertyPath: m_ScaleInLightmap
-      value: 0.4
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b014caa72e522bd48b899ca653f484c7,
         type: 3}
@@ -3799,7 +3804,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b014caa72e522bd48b899ca653f484c7,
         type: 3}
       propertyPath: m_StitchLightmapSeams
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b014caa72e522bd48b899ca653f484c7,
         type: 3}
@@ -3886,8 +3891,13 @@ PrefabInstance:
     - target: {fileID: -7938411895961862745, guid: 1005690e98cfbd445a0f6bcd052500f6,
         type: 3}
       propertyPath: m_ScaleInLightmap
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: -7938411895961862745, guid: 1005690e98cfbd445a0f6bcd052500f6,
+        type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 680570139497587563, guid: 1005690e98cfbd445a0f6bcd052500f6,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3986,7 +3996,7 @@ PrefabInstance:
     - target: {fileID: 4225502522296751122, guid: 1005690e98cfbd445a0f6bcd052500f6,
         type: 3}
       propertyPath: m_ScaleInLightmap
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7540299158025824640, guid: 1005690e98cfbd445a0f6bcd052500f6,
         type: 3}
@@ -5153,7 +5163,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
+  m_Color: {r: 0.09433961, g: 0.08410465, b: 0.08410465, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -5199,7 +5209,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 6e-44, z: 6.7e-44, w: 1.1505e-41}
+  m_BoundingSphereOverride: {x: 9.1835e-41, y: 1.1681478e-37, z: 9.78048e-39, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -5212,13 +5222,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740143827}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06774471, y: -0.14289765, z: -0.009804413, w: 0.98736763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.391872, y: -4.717823, z: -13.032149}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 184756898}
-  m_LocalEulerAnglesHint: {x: -7.85, y: -16.47, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1740143830
 MonoBehaviour:
   m_ObjectHideFlags: 0
